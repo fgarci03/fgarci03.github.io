@@ -46,15 +46,27 @@
     </footer>
 
     <script>
-        function showText(target, message, index, interval) {
+        var defaultInterval = 100;
+
+        function showText(target, message, index) {
             if (index < message.length) {
-                document.getElementById('desc').innerHTML += message[index++];
-                setTimeout(function () { showText(target, message, index, interval); }, interval);
+                var interval = defaultInterval;
+                var nextChar = message[index++];
+
+                // If it's a space, take extra time. It produces a nice effect :)
+                if (nextChar === ' ') {
+                    interval = 400;
+                }
+
+                document.getElementById('desc').innerHTML += nextChar;
+                setTimeout(function () { showText(target, message, index); }, interval);
             }
         }
 
         (function() {
-            showText('#desc', 'Developer, tinkerer, entrepreneur, nerd', 0, 100);
+            setTimeout(function () {
+                showText('#desc', 'Developer, tinkerer, entrepreneur, nerd', 0);
+            }, 750);
         })();
     </script>
 </body>
