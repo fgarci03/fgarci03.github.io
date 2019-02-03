@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filipe Garcia</title>
+
+    <!-- Default -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Filipe Garcia - A developer, tinkerer, entrepreneur, open-source lover, and all around nerd.">
+	<meta name="keywords" content="Filipe Garcia, developer, fullstack, full-stack, entrepreneur, entrepreneurship, startup, tinkerer, tinkering, nerd, open source, open-source">
+	<meta name="author" content="Filipe Garcia">
+	<meta name="robots" content="index, follow">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="assets/logo/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/logo/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/logo/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/logo/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/logo/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/logo/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/logo/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/logo/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon-180x180.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css" type="text/css" media="screen">
+</head>
+<body>
+    <main class="container">
+        <section class="content">
+            <h1>Filipe Garcia</h1>
+            <p id="desc"></p>
+            <a href="mailto:me@filipe-garcia.com" title="Email Filipe">Contact</a>
+        </section>
+    </main>
+
+    <footer>
+        <a class="tw" target="_blank" href="https://twitter.com/fgarci03" title="Filipe Garcia on Twitter"><i class="fab fa-twitter-square"></i></a>
+        <a class="fb" target="_blank" href="https://www.facebook.com/garcia.filipeandre" title="Filipe Garcia on Facebook"><i class="fab fa-facebook-square"></i></a>
+        <a class="gh" target="_blank" href="https://github.com/fgarci03" title="Filipe Garcia on GitHub"><i class="fab fa-github-square"></i></a>
+        <a class="li" target="_blank" href="https://www.linkedin.com/in/garciafilipeandre" title="Filipe Garcia on LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </footer>
+
+    <script>
+        function showText(target, message, index, interval) {
+            if (index < message.length) {
+                document.getElementById('desc').innerHTML += message[index++];
+                setTimeout(function () { showText(target, message, index, interval); }, interval);
+            }
+        }
+
+        (function() {
+            showText('#desc', 'Developer, tinkerer, entrepreneur, nerd', 0, 100);
+        })();
+    </script>
+</body>
+</html>

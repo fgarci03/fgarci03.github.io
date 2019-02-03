@@ -1,9 +1,8 @@
 /* TEAM */
-	Author, Web designer & Owner: Filipe Garcia
+	Author: Filipe Garcia
 	Website: http://filipe-garcia.com
 	Twitter: @fgarci03
 	From: Porto, Portugal
 
 /* THANKS */
-	Logo: Sofia Carvalho - http://www.sofiacarvalho.pt
-	Partners: iThink - http://www.ithink.pt
+	Logo: Sofia Carvalho
