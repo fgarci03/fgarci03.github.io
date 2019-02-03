@@ -1,0 +1,10 @@
+################
+User-agent: *
+Disallow: /.Trash-1000/
+
+################
+User-agent: Hackers
+Disallow: /MyShit/
+
+User-agent: WannaBes
+Disallow: /YourShit/
