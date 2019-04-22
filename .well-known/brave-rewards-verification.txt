@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: filipe-garcia.com
+Token: 92731c5c1a17d178a897cc25da9a5dc2a2349bf84948afa1738a0d6155554e71
